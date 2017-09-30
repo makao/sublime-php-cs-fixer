@@ -1,0 +1,53 @@
+[
+    {
+        "id": "tools",
+        "children": [
+            {
+                "id": "phpcsfixer_fix",
+                "caption": "Run PHP-CS-Fixer",
+                "command": "phpcsfixer_fix"
+            }
+        ]
+    },
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "PHP-CS-Fixer",
+                        "children": [
+                            {
+                                "caption": "Settings",
+                                "command": "php_cs_fixer_edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/PHPCSFixer/PHPCSFixer.sublime-settings",
+                                    "default": "// PHPCSFixer Settings - User\n{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "Settings - Default",
+                                "command": "php_cs_fixer_open_file",
+                                "args": {"file": "${packages}/PHPCSFixer/PHPCSFixer.sublime-settings"}
+                            },
+                            {
+                                "caption": "Settings - User",
+                                "command": "php_cs_fixer_open_file",
+                                "args": {"file": "${packages}/User/PHPCSFixer.sublime-settings"}
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "caption": "Readme",
+                                "command": "open_file",
+                                "args": {"file": "${packages}/PHPCSFixer/Readme.md"}
+                            },
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

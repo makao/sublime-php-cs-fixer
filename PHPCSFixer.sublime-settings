@@ -1,0 +1,13 @@
+{
+    // Path to executable, must be installed first, see Readme.md
+    "executable": "php php-cs-fixer.phar",
+
+    // Ignored extensions
+    "ignored_extensions": ["twig.php", "blade.php", ".phtml"],
+
+    // Fix on save
+    "on_save": false,
+
+    // Rules applied to fixer
+    "rules": ["@PSR2"]
+}
